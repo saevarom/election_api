@@ -6,12 +6,12 @@ DEBUG = False
 TEMPLATE_DEBUG = False
 
 # static on prod
-STATIC_URL = '//election_api.overcastcdn.com/'
+# STATIC_URL = '//election_api.overcastcdn.com/'
 COMPRESS_URL = STATIC_URL
 ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
-STATICFILES_STORAGE = 'election_api.storage.CachedS3BotoStorage'
-COMPRESS_STORAGE = 'election_api.storage.CachedS3BotoStorage'
-DEFAULT_FILE_STORAGE = 'election_api.storage.CachedS3BotoStorage'
+# STATICFILES_STORAGE = 'election_api.storage.CachedS3BotoStorage'
+# COMPRESS_STORAGE = 'election_api.storage.CachedS3BotoStorage'
+# DEFAULT_FILE_STORAGE = 'election_api.storage.CachedS3BotoStorage'
 
 
 # redis cache on localhost
