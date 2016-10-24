@@ -38,10 +38,12 @@ class Party(models.Model):
         on_delete=models.SET_NULL,
         related_name='+'
     )
+    color = models.CharField(max_length=30, blank=True, null=True)
 
     panels = [
         FieldPanel('name'),
         FieldPanel('symbol'),
+        FieldPanel('color'),
         ImageChooserPanel('logo'),
     ]
 

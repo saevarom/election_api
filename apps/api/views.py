@@ -18,7 +18,7 @@ class PartySerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Party
-        fields = ('name', 'logo')
+        fields = ('name', 'logo', 'symbol', 'color')
 
 
 class SeatSerializer(serializers.HyperlinkedModelSerializer):

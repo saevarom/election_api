@@ -1,0 +1,784 @@
+[
+{
+    "model": "api.person",
+    "pk": 1,
+    "fields": {
+        "name": "Katr\u00edn Jakobsd\u00f3ttir",
+        "photo": 1
+    }
+},
+{
+    "model": "api.person",
+    "pk": 2,
+    "fields": {
+        "name": "Steinunn \u00de\u00f3ra \u00c1rnad\u00f3ttir",
+        "photo": null
+    }
+},
+{
+    "model": "api.person",
+    "pk": 3,
+    "fields": {
+        "name": "Andr\u00e9s Ingi J\u00f3nsson",
+        "photo": null
+    }
+},
+{
+    "model": "api.person",
+    "pk": 4,
+    "fields": {
+        "name": "I\u00f0unn Gar\u00f0arsd\u00f3ttir",
+        "photo": null
+    }
+},
+{
+    "model": "api.person",
+    "pk": 5,
+    "fields": {
+        "name": "Orri P\u00e1ll J\u00f3hannsson",
+        "photo": null
+    }
+},
+{
+    "model": "api.person",
+    "pk": 6,
+    "fields": {
+        "name": "\u00c1lfhei\u00f0ur Ingad\u00f3ttir",
+        "photo": null
+    }
+},
+{
+    "model": "api.person",
+    "pk": 7,
+    "fields": {
+        "name": "\u00deorsteinn V. Einarsson",
+        "photo": null
+    }
+},
+{
+    "model": "api.person",
+    "pk": 8,
+    "fields": {
+        "name": "Gy\u00f0a Dr\u00f6fn Hjaltad\u00f3ttir",
+        "photo": null
+    }
+},
+{
+    "model": "api.person",
+    "pk": 9,
+    "fields": {
+        "name": "Ragnar Kjartansson",
+        "photo": null
+    }
+},
+{
+    "model": "api.person",
+    "pk": 10,
+    "fields": {
+        "name": "Gu\u00f0r\u00fan \u00c1g\u00fastsd\u00f3ttir",
+        "photo": null
+    }
+},
+{
+    "model": "api.person",
+    "pk": 11,
+    "fields": {
+        "name": "Ragnar Karl J\u00f3hannsson",
+        "photo": null
+    }
+},
+{
+    "model": "api.person",
+    "pk": 12,
+    "fields": {
+        "name": "Jovana Pavlovic",
+        "photo": null
+    }
+},
+{
+    "model": "api.person",
+    "pk": 13,
+    "fields": {
+        "name": "Atli Sig\u00fe\u00f3rsson (K\u00f6tt Gr\u00e1 P\u00e9)",
+        "photo": null
+    }
+},
+{
+    "model": "api.person",
+    "pk": 14,
+    "fields": {
+        "name": "Sigr\u00ed\u00f0ur Stef\u00e1nd\u00f3ttir",
+        "photo": null
+    }
+},
+{
+    "model": "api.person",
+    "pk": 15,
+    "fields": {
+        "name": "\u00c1sgr\u00edmur Angant\u00fdsson",
+        "photo": null
+    }
+},
+{
+    "model": "api.person",
+    "pk": 16,
+    "fields": {
+        "name": "Brynhildur Bj\u00f6rnsd\u00f3ttir",
+        "photo": null
+    }
+},
+{
+    "model": "api.person",
+    "pk": 17,
+    "fields": {
+        "name": "Meisam Rafiei",
+        "photo": null
+    }
+},
+{
+    "model": "api.person",
+    "pk": 18,
+    "fields": {
+        "name": "Au\u00f0ur Alf\u00edfa Ketilsd\u00f3ttir",
+        "photo": null
+    }
+},
+{
+    "model": "api.person",
+    "pk": 19,
+    "fields": {
+        "name": "Sigr\u00ed\u00f0ur Thorlacius",
+        "photo": null
+    }
+},
+{
+    "model": "api.person",
+    "pk": 20,
+    "fields": {
+        "name": "Erling \u00d3lafsson",
+        "photo": null
+    }
+},
+{
+    "model": "api.person",
+    "pk": 21,
+    "fields": {
+        "name": "Birna \u00de\u00f3r\u00f0ard\u00f3ttir",
+        "photo": null
+    }
+},
+{
+    "model": "api.person",
+    "pk": 22,
+    "fields": {
+        "name": "Sigr\u00ed\u00f0ur Kristinsd\u00f3ttir",
+        "photo": null
+    }
+},
+{
+    "model": "api.party",
+    "pk": 1,
+    "fields": {
+        "name": "Vinstri hreyfingin - gr\u00e6nt frambo\u00f0",
+        "symbol": "V",
+        "logo": null,
+        "color": "#f22323"
+    }
+},
+{
+    "model": "api.party",
+    "pk": 2,
+    "fields": {
+        "name": "Sj\u00e1lfst\u00e6\u00f0isflokkur",
+        "symbol": "D",
+        "logo": null,
+        "color": "#00adf2"
+    }
+},
+{
+    "model": "api.party",
+    "pk": 3,
+    "fields": {
+        "name": "Bj\u00f6rt framt\u00ed\u00f0",
+        "symbol": "A",
+        "logo": null,
+        "color": "#960f82"
+    }
+},
+{
+    "model": "api.party",
+    "pk": 4,
+    "fields": {
+        "name": "Vi\u00f0reisn",
+        "symbol": "C",
+        "logo": null,
+        "color": "#f6a705"
+    }
+},
+{
+    "model": "api.party",
+    "pk": 5,
+    "fields": {
+        "name": "Frams\u00f3knarflokkur",
+        "symbol": "B",
+        "logo": null,
+        "color": "#7bc021"
+    }
+},
+{
+    "model": "api.party",
+    "pk": 6,
+    "fields": {
+        "name": "Samfylking",
+        "symbol": "S",
+        "logo": null,
+        "color": "#ad0600"
+    }
+},
+{
+    "model": "api.party",
+    "pk": 7,
+    "fields": {
+        "name": "P\u00edratar",
+        "symbol": "P",
+        "logo": null,
+        "color": "#626262"
+    }
+},
+{
+    "model": "api.party",
+    "pk": 8,
+    "fields": {
+        "name": "A\u00f0rir",
+        "symbol": "-",
+        "logo": null,
+        "color": "#bbbbbb"
+    }
+},
+{
+    "model": "api.election",
+    "pk": 1,
+    "fields": {
+        "title": "Al\u00feingiskosningar 2016",
+        "subtitle": "Al\u00feingiskosningar 2016"
+    }
+},
+{
+    "model": "api.pollresult",
+    "pk": 1,
+    "fields": {
+        "party": 2,
+        "votes": 226
+    }
+},
+{
+    "model": "api.pollresult",
+    "pk": 2,
+    "fields": {
+        "party": 7,
+        "votes": 211
+    }
+},
+{
+    "model": "api.pollresult",
+    "pk": 3,
+    "fields": {
+        "party": 1,
+        "votes": 186
+    }
+},
+{
+    "model": "api.pollresult",
+    "pk": 4,
+    "fields": {
+        "party": 5,
+        "votes": 91
+    }
+},
+{
+    "model": "api.pollresult",
+    "pk": 5,
+    "fields": {
+        "party": 4,
+        "votes": 88
+    }
+},
+{
+    "model": "api.pollresult",
+    "pk": 6,
+    "fields": {
+        "party": 8,
+        "votes": 73
+    }
+},
+{
+    "model": "api.pollresult",
+    "pk": 7,
+    "fields": {
+        "party": 6,
+        "votes": 65
+    }
+},
+{
+    "model": "api.pollresult",
+    "pk": 8,
+    "fields": {
+        "party": 3,
+        "votes": 60
+    }
+},
+{
+    "model": "api.pollresultlink",
+    "pk": 1,
+    "fields": {
+        "sort_order": 0,
+        "poll": 1
+    }
+},
+{
+    "model": "api.pollresultlink",
+    "pk": 2,
+    "fields": {
+        "sort_order": 1,
+        "poll": 1
+    }
+},
+{
+    "model": "api.pollresultlink",
+    "pk": 3,
+    "fields": {
+        "sort_order": 2,
+        "poll": 1
+    }
+},
+{
+    "model": "api.pollresultlink",
+    "pk": 4,
+    "fields": {
+        "sort_order": 3,
+        "poll": 1
+    }
+},
+{
+    "model": "api.pollresultlink",
+    "pk": 5,
+    "fields": {
+        "sort_order": 4,
+        "poll": 1
+    }
+},
+{
+    "model": "api.pollresultlink",
+    "pk": 6,
+    "fields": {
+        "sort_order": 5,
+        "poll": 1
+    }
+},
+{
+    "model": "api.pollresultlink",
+    "pk": 7,
+    "fields": {
+        "sort_order": 6,
+        "poll": 1
+    }
+},
+{
+    "model": "api.pollresultlink",
+    "pk": 8,
+    "fields": {
+        "sort_order": 7,
+        "poll": 1
+    }
+},
+{
+    "model": "api.poll",
+    "pk": 1,
+    "fields": {
+        "title": "F\u00e9lagsv\u00edsindastofnun H\u00cd",
+        "source": "F\u00e9lagsv\u00edsindastofnun H\u00cd",
+        "date": "2016-10-22",
+        "election": 1
+    }
+},
+{
+    "model": "api.constituency",
+    "pk": 1,
+    "fields": {
+        "name": "Reykjav\u00edkurkj\u00f6rd\u00e6mi Nor\u00f0ur",
+        "voters": 46082,
+        "available_seats": 9,
+        "election": 1
+    }
+},
+{
+    "model": "api.constituency",
+    "pk": 2,
+    "fields": {
+        "name": "Reykjav\u00edkurkj\u00f6rd\u00e6mi Su\u00f0ur",
+        "voters": 45685,
+        "available_seats": 9,
+        "election": 1
+    }
+},
+{
+    "model": "api.electorallistseat",
+    "pk": 1,
+    "fields": {
+        "seat": 1,
+        "person": 1
+    }
+},
+{
+    "model": "api.electorallistseat",
+    "pk": 2,
+    "fields": {
+        "seat": 2,
+        "person": 2
+    }
+},
+{
+    "model": "api.electorallistseat",
+    "pk": 3,
+    "fields": {
+        "seat": 3,
+        "person": 3
+    }
+},
+{
+    "model": "api.electorallistseat",
+    "pk": 4,
+    "fields": {
+        "seat": 4,
+        "person": 4
+    }
+},
+{
+    "model": "api.electorallistseat",
+    "pk": 5,
+    "fields": {
+        "seat": 5,
+        "person": 5
+    }
+},
+{
+    "model": "api.electorallistseat",
+    "pk": 6,
+    "fields": {
+        "seat": 6,
+        "person": 6
+    }
+},
+{
+    "model": "api.electorallistseat",
+    "pk": 7,
+    "fields": {
+        "seat": 7,
+        "person": 7
+    }
+},
+{
+    "model": "api.electorallistseat",
+    "pk": 8,
+    "fields": {
+        "seat": 8,
+        "person": 8
+    }
+},
+{
+    "model": "api.electorallistseat",
+    "pk": 9,
+    "fields": {
+        "seat": 9,
+        "person": 9
+    }
+},
+{
+    "model": "api.electorallistseat",
+    "pk": 10,
+    "fields": {
+        "seat": 10,
+        "person": 10
+    }
+},
+{
+    "model": "api.electorallistseat",
+    "pk": 11,
+    "fields": {
+        "seat": 11,
+        "person": 11
+    }
+},
+{
+    "model": "api.electorallistseat",
+    "pk": 12,
+    "fields": {
+        "seat": 12,
+        "person": 12
+    }
+},
+{
+    "model": "api.electorallistseat",
+    "pk": 13,
+    "fields": {
+        "seat": 13,
+        "person": 13
+    }
+},
+{
+    "model": "api.electorallistseat",
+    "pk": 14,
+    "fields": {
+        "seat": 14,
+        "person": 14
+    }
+},
+{
+    "model": "api.electorallistseat",
+    "pk": 15,
+    "fields": {
+        "seat": 15,
+        "person": 15
+    }
+},
+{
+    "model": "api.electorallistseat",
+    "pk": 16,
+    "fields": {
+        "seat": 16,
+        "person": 16
+    }
+},
+{
+    "model": "api.electorallistseat",
+    "pk": 17,
+    "fields": {
+        "seat": 17,
+        "person": 17
+    }
+},
+{
+    "model": "api.electorallistseat",
+    "pk": 18,
+    "fields": {
+        "seat": 18,
+        "person": 18
+    }
+},
+{
+    "model": "api.electorallistseat",
+    "pk": 19,
+    "fields": {
+        "seat": 19,
+        "person": 19
+    }
+},
+{
+    "model": "api.electorallistseat",
+    "pk": 20,
+    "fields": {
+        "seat": 20,
+        "person": 20
+    }
+},
+{
+    "model": "api.electorallistseat",
+    "pk": 21,
+    "fields": {
+        "seat": 21,
+        "person": 21
+    }
+},
+{
+    "model": "api.electorallistseat",
+    "pk": 22,
+    "fields": {
+        "seat": 22,
+        "person": 22
+    }
+},
+{
+    "model": "api.electorallistseatassignment",
+    "pk": 1,
+    "fields": {
+        "sort_order": 0,
+        "seats": 1
+    }
+},
+{
+    "model": "api.electorallistseatassignment",
+    "pk": 2,
+    "fields": {
+        "sort_order": 1,
+        "seats": 1
+    }
+},
+{
+    "model": "api.electorallistseatassignment",
+    "pk": 3,
+    "fields": {
+        "sort_order": 2,
+        "seats": 1
+    }
+},
+{
+    "model": "api.electorallistseatassignment",
+    "pk": 4,
+    "fields": {
+        "sort_order": 3,
+        "seats": 1
+    }
+},
+{
+    "model": "api.electorallistseatassignment",
+    "pk": 5,
+    "fields": {
+        "sort_order": 4,
+        "seats": 1
+    }
+},
+{
+    "model": "api.electorallistseatassignment",
+    "pk": 6,
+    "fields": {
+        "sort_order": 5,
+        "seats": 1
+    }
+},
+{
+    "model": "api.electorallistseatassignment",
+    "pk": 7,
+    "fields": {
+        "sort_order": 6,
+        "seats": 1
+    }
+},
+{
+    "model": "api.electorallistseatassignment",
+    "pk": 8,
+    "fields": {
+        "sort_order": 7,
+        "seats": 1
+    }
+},
+{
+    "model": "api.electorallistseatassignment",
+    "pk": 9,
+    "fields": {
+        "sort_order": 8,
+        "seats": 1
+    }
+},
+{
+    "model": "api.electorallistseatassignment",
+    "pk": 10,
+    "fields": {
+        "sort_order": 9,
+        "seats": 1
+    }
+},
+{
+    "model": "api.electorallistseatassignment",
+    "pk": 11,
+    "fields": {
+        "sort_order": 10,
+        "seats": 1
+    }
+},
+{
+    "model": "api.electorallistseatassignment",
+    "pk": 12,
+    "fields": {
+        "sort_order": 11,
+        "seats": 1
+    }
+},
+{
+    "model": "api.electorallistseatassignment",
+    "pk": 13,
+    "fields": {
+        "sort_order": 12,
+        "seats": 1
+    }
+},
+{
+    "model": "api.electorallistseatassignment",
+    "pk": 14,
+    "fields": {
+        "sort_order": 13,
+        "seats": 1
+    }
+},
+{
+    "model": "api.electorallistseatassignment",
+    "pk": 15,
+    "fields": {
+        "sort_order": 14,
+        "seats": 1
+    }
+},
+{
+    "model": "api.electorallistseatassignment",
+    "pk": 16,
+    "fields": {
+        "sort_order": 15,
+        "seats": 1
+    }
+},
+{
+    "model": "api.electorallistseatassignment",
+    "pk": 17,
+    "fields": {
+        "sort_order": 16,
+        "seats": 1
+    }
+},
+{
+    "model": "api.electorallistseatassignment",
+    "pk": 18,
+    "fields": {
+        "sort_order": 17,
+        "seats": 1
+    }
+},
+{
+    "model": "api.electorallistseatassignment",
+    "pk": 19,
+    "fields": {
+        "sort_order": 18,
+        "seats": 1
+    }
+},
+{
+    "model": "api.electorallistseatassignment",
+    "pk": 20,
+    "fields": {
+        "sort_order": 19,
+        "seats": 1
+    }
+},
+{
+    "model": "api.electorallistseatassignment",
+    "pk": 21,
+    "fields": {
+        "sort_order": 20,
+        "seats": 1
+    }
+},
+{
+    "model": "api.electorallistseatassignment",
+    "pk": 22,
+    "fields": {
+        "sort_order": 21,
+        "seats": 1
+    }
+},
+{
+    "model": "api.electorallist",
+    "pk": 1,
+    "fields": {
+        "constituency": 1,
+        "party": 1
+    }
+}
+]
