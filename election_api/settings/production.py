@@ -38,10 +38,10 @@ DATABASES =  {
     'default': dj_database_url.config()
 }
 
-EMAIL_HOST = 'smtp.mandrillapp.com'
+EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_PORT = '587'
-EMAIL_HOST_USER = 'app58346924@heroku.com'
-EMAIL_HOST_PASSWORD = '1oy8v2v31303'
+EMAIL_HOST_USER = os.getenv('SENDGRID_USERNAME')
+EMAIL_HOST_PASSWORD = os.getenv('SENDGRID_PASSWORD')
 
 try:
     from .local import *
