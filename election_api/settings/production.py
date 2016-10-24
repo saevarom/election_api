@@ -12,6 +12,7 @@ ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 # STATICFILES_STORAGE = 'election_api.storage.CachedS3BotoStorage'
 # COMPRESS_STORAGE = 'election_api.storage.CachedS3BotoStorage'
 # DEFAULT_FILE_STORAGE = 'election_api.storage.CachedS3BotoStorage'
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 
 # redis cache on localhost

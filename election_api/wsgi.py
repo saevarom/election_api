@@ -10,8 +10,10 @@ https://docs.djangoproject.com/en/1.9/howto/deployment/wsgi/
 import os
 from django.core.wsgi import get_wsgi_application
 import dotenv
+from whitenoise.django import DjangoWhiteNoise
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "election_api.settings")
 dotenv.read_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
 
 application = get_wsgi_application()
+application = DjangoWhiteNoise(application)

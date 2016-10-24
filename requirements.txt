@@ -15,3 +15,4 @@ wagtailfontawesome==1.0.5
 django-compressor==2.0
 pycrypto
 drf-nested-routers==0.11.1
+whitenoise==3.2.2
