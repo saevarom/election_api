@@ -1,0 +1,14 @@
+{% load cache compress static wagtailuserbar wagtailimages_tags static %}
+<!DOCTYPE html>
+<html>
+    <body>
+
+        {% wagtailuserbar %} {# Don't delete this #}
+
+        <main>{% block content %}{% endblock %}</main>
+
+        <footer class="clearfix">
+        </footer>
+
+    </body>
+</html>

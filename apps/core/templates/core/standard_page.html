@@ -1,0 +1,16 @@
+{% extends settings.core.GeneralSiteSettings.base_template.filename|default:'base.html' %}
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block content %}
+    {% if self.header_image %}
+        {% image self.header_image fill-1300x750 as header_image %}
+        <style>
+            .heading {
+                background-image: url('{{ header_image.url }}');
+            }
+        </style>
+    {% endif %}
+
+    {% include "core/streamfield.html" %}
+
+{% endblock %}

@@ -1,0 +1,96 @@
+{% extends "overcast/base.html" %}
+{% load wagtailcore_tags wagtailimages_tags overcast_tags %}
+
+{% block content %}
+{% get_next_sibling_blog self as next_page %}
+{% get_prev_sibling_blog self as prev_page %}
+
+<main class="page-blog-single single">
+
+    <div class="nextprev-nav">
+        {% if prev_page %}
+            <div class="nextprev prev">
+                <a href="{% pageurl prev_page %}"><span>{{ prev_page.title }}</span></a>
+            </div>
+        {% endif %}
+
+        {% if next_page %}
+            <div class="nextprev next">
+                <a href="{% pageurl next_page %}"><span>{{ next_page.title }}</span></a>
+            </div>
+        {% endif %}
+    </div>
+
+    <section class="container body-copy">
+
+        {% include "overcast/includes/breadcrumb.html" %}
+
+        <h1 class="{% if self.title|length >= 30 %}long-title{% endif %}">{{ self.title }}</h1>
+
+        <div class="article-meta">
+            {% if self.date %}
+                <span class="date">{{ self.date|date:"j F Y" }}{% if self.has_authors %}&nbsp;|&nbsp;{% endif %}</span>
+            {% endif %}
+
+            {# note these tags are all squashed together in order to avoid a space before the comma if there are current authors as well as an author who has left #}
+            {% with self.related_author.all as authors %}{% if authors %}{% for author in authors %}{% if author.author %}<a href="{% pageurl author.author %}">{{ author.author.title }}</a>{% if not forloop.last %}, {% endif %}{% endif %}{% endfor %}{% endif %}{% endwith %}{% if self.author_left %}{% if self.has_authors %}, {% endif %}{{ self.author_left }}{% endif %}
+
+            <div class="share">
+                {% if self.has_authors %}| {% endif %}<a>Share &#10084;</a>
+                <ul class="share options">
+                    <li>
+                        <div class="fb-like" data-width="100" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-via="overcast">Tweet</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        {% if not self.streamfield and self.intro %}
+            {{ self.intro|richtext }}
+        {% endif %}
+
+        {% if self.body %}
+            {{ self.body|richtext }}
+        {% endif %}
+    </section>
+
+    {% include "overcast/includes/streamfield.html" %}
+
+    <section class="container body-copy">
+        <div id="author" class="author clearfix" >
+            {% with self.related_author.all as authors %}
+                {% if authors %}
+                    {% for author in authors %}
+                    <div class="author-holder">
+                        {% if author.author.image %}
+                            {% image author.author.image fill-300x300 as photo %}
+                            <img src="{{ photo.url }}" width="{{ photo.width }}" height="{{ photo.height }}" alt="{{ photo.alt }}" class="avatar" />
+                        {% endif %}
+                        {% if author.author %}<a href="{% pageurl author.author %}" class="name">{{ author.author.title }}</a>{% endif %}
+
+                        {% if author.author.role %}
+                            <span class="role">{{ author.author.role }}</span>
+                    </div>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+
+        <section class="tags">
+            {% with self.tags.all as tags %}
+                {% if tags %}
+                    {% for tag in tags %}
+                        <a href="{% pageurl self.blog_index %}?tag={{ tag.tag }}">{{ tag.tag }}</a>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </section>
+
+    </section>
+</main>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+{% load wagtailimages_tags %}
+
+<div class="{% if value.alignment == "left" or value.alignment == "right" %}align-{{ value.alignment }}{% else %}{{ value.alignment }}-width {% endif %} {{ value.extra_classes }}">
+    {% if value.alignment == 'fit_content' %}
+            <div class="row">
+                <div class="col-xs-12">
+    {% endif %}
+    <div class="img-holder">
+        {% if value.alignment == "left" or value.alignment == "right" %}
+            {% image value.image width-400 as blockimage %}
+        {% elif value.alignment == "half" %}
+            {% image value.image width-800 as blockimage %}
+        {% else %}
+            {% image value.image width-1280 as blockimage %}
+        {% endif %}
+
+        <div class="{% if value.attribution %}img-credit{% endif %} {% if value.overlay_text.source|length > 0 %}text-overlay{% endif %}">
+            <img src="{{ blockimage.url }}" width="{{ blockimage.width }}" alt="{{ blockimage.alt }}" />
+            {% if value.attribution %}<p class="credit">{{ value.attribution }}</p>{% endif %}
+            {% if value.overlay_text.source|length > 0 %}
+                <div class="text-overlay-container">
+                    <div class="inner">
+                        {{value.overlay_text|safe}}
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+
+        {% if value.caption %}
+            <p class="caption-text">{{ value.caption }}</p>
+        {% endif %}
+    </div>
+    {% if value.alignment == 'fit_content' %}
+            </div>
+        </div>
+    {% endif %}
+</div>

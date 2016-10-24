@@ -1,0 +1,11 @@
+{% load wagtailcore_tags wagtailimages_tags overcast_tags %}
+
+{% if self.streamfield %}
+    <section class="body-copy stream-field container">
+        {% for child in self.streamfield %}
+            {% with template_prefix=settings.core.GeneralSiteSettings.template_dir|default:'' %}
+                {% render_block child template_prefix=template_prefix %}
+            {% endwith %}
+        {% endfor %}
+    </section>
+{% endif %}

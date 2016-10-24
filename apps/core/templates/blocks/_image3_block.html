@@ -1,0 +1,36 @@
+{% load wagtailcore_tags wagtailimages_tags %}
+
+<div class="image-container {{ value.extra_classes }}">
+    <div class="row">
+        {% image value.images.0.image fill-200x200-c100 as sectionimagedata1 %}
+        <div class="col-md-4 col-xs-6 col-pr-4 img-wrapper first">
+            <img src="{{sectionimagedata1.url}}" alt="{{ value.images.0.image }}" />
+            <div class="caption-container hidden-sm">
+                <div class="caption">
+                    {% if imgblock.caption %}<div class="main-caption">{{ imgblock.caption|safe }}</div>{% endif %}
+                    {% if imgblock.credit %}<div class="main-credit"><i class="fa fa-camera-retro"></i> {{ imgblock.credit|safe }}</div>{% endif %}
+                </div>
+            </div>
+        </div>
+        {% image value.images.1.image fill-200x200-c100 as sectionimagedata2 %}
+        <div class="col-md-4 col-xs-6 col-pr-4 img-wrapper second">
+            <img src="{{sectionimagedata2.url}}" alt="{{ value.images.1.image }}"/>
+            <div class="caption-container hidden-sm">
+                <div class="caption">
+                    {% if imgblock.caption %}<div class="main-caption">{{ imgblock.caption|safe }}</div>{% endif %}
+                    {% if imgblock.credit %}<div class="main-credit"><i class="fa fa-camera-retro"></i> {{ imgblock.credit|safe }}</div>{% endif %}
+                </div>
+            </div>
+        </div>
+        {% image value.images.2.image fill-200x200-c100 as sectionimagedata3 %}
+        <div class="col-md-4 col-md-push-0 col-xs-6 col-xs-push-3 col-pr-4 img-wrapper last">
+            <img src="{{sectionimagedata3.url}}" alt="{{ value.images.2.image }}"/>
+            <div class="caption-container hidden-sm">
+                <div class="caption">
+                    {% if imgblock.caption %}<div class="main-caption">{{ imgblock.caption|safe }}</div>{% endif %}
+                    {% if imgblock.credit %}<div class="main-credit"><i class="fa fa-camera-retro"></i> {{ imgblock.credit|safe }}</div>{% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

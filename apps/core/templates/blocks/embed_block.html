@@ -1,0 +1,9 @@
+{% if 'youtube' in value.url %}
+    <div class="col-xs-12 col-sm-10 col-md-8 col-md-push-1 p0 {{ value.extra_classes }}">
+        <div class="youtube-iframe-container">
+            <div data-youtube-url="{{value.url}}" class="youtube-embed"></div>
+        </div>
+    </div>
+{% else %}
+    <div>{{value}}</div>
+{% endif %}

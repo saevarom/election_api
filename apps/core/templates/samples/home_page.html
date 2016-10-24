@@ -1,0 +1,20 @@
+{% extends "overcast/base.html" %}
+{% load overcast_tags wagtailcore_tags wagtailimages_tags wagtailembeds_tags static %}
+{% block body_class %}{% if self.hero_video_id %}hasvideo{% endif %}{% endblock %}
+{% block title_postfix %}{% endblock %}
+{% block content %}
+
+    <section class="hero">
+        {% if self.hero_image %}
+            <div class="poster">
+                {% image self.hero_image fill-900x505 %}
+            </div>
+        {% endif %}
+    </section>
+
+    <section id="posts" class="listing clearfix">
+        {% work_and_blog_listing %}
+    </section>
+
+
+{% endblock %}

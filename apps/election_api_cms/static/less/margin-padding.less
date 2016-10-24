@@ -1,0 +1,25 @@
+
+.make-margins(50, px);
+.make-paddings(50, px);
+
+.make-margins(@i, @u: px) when (@i >= 0) {
+    .make-margins((@i - 5), @u);
+    &{.margin-x(@i, @u)}
+}
+.make-paddings(@i, @u: px) when (@i >= 0) {
+    .make-paddings((@i - 5), @u);
+    &{.padding-x(@i, @u)}
+}
+.margin-x(@value, @u: px) {
+    .mt@{value} {margin-top:    unit(@value, @u) !important}
+    .mr@{value} {margin-right:  unit(@value, @u) !important}
+    .mb@{value} {margin-bottom: unit(@value, @u) !important}
+    .ml@{value} {margin-left:   unit(@value, @u) !important}
+}
+.padding-x(@value, @u: px) {
+    .pt@{value} {padding-top:    unit(@value, @u) !important}
+    .pr@{value} {padding-right:  unit(@value, @u) !important}
+    .pb@{value} {padding-bottom: unit(@value, @u) !important}
+    .pl@{value} {padding-left:   unit(@value, @u) !important}
+}
+

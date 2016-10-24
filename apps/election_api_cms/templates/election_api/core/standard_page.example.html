@@ -1,0 +1,8 @@
+{% extends settings.core.GeneralSiteSettings.base_template.filename|default:'base.html' %}
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block content %}
+
+{% include "election_api/streamfield.html" %}
+
+{% endblock %}

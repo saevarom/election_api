@@ -1,0 +1,18 @@
+{% load wagtailcore_tags wagtailimages_tags %}
+
+<div class="container image-container {{ value.extra_classes }}">
+    <div class="row">
+        {% for imgblock in value.images %}
+            {% image imgblock.image fill-570x320-c100 as sectionimagedata %}
+            <div class="col-sm-6 img-wrapper">
+                <img src="{{sectionimagedata.url}}" />
+                <div class="caption-container hidden-sm">
+                    <div class="caption">
+                        {% if imgblock.caption %}<div class="main-caption">{{ imgblock.caption|safe }}</div>{% endif %}
+                        {% if imgblock.credit %}<div class="main-credit"><i class="fa fa-camera-retro"></i> {{ imgblock.credit|safe }}</div>{% endif %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

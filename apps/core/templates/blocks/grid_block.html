@@ -1,0 +1,19 @@
+{% load wagtailcore_tags overcast_tags cache static wagtailembeds_tags %}
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12 p0">
+        <div class="{{value.extra_classes}}">
+            <div class="grid-block-container rich-text">
+                <div class="is-xs visible-xs-block"></div>
+                {% with value as v %}
+                    {% parse_grid_block v.template v.content_blocks %}
+                {% endwith %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-push-1">

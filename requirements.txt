@@ -1,0 +1,17 @@
+psycopg2==2.6.1
+Django>=1.9
+wagtail==1.7
+django-dotenv
+redis==2.10.5
+django-redis-cache==1.6.5
+Fabric==1.10.2
+django-extensions
+dj-database-url==0.3.0
+gunicorn==19.4.5
+django-storages==1.1.8
+boto==2.38.0
+hiredis
+wagtailfontawesome==1.0.5
+django-compressor==2.0
+pycrypto
+drf-nested-routers==0.11.1

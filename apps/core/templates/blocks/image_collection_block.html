@@ -1,0 +1,17 @@
+{% load wagtailcore_tags overcast_tags cache static wagtailembeds_tags %}
+
+<div class="row">
+    <div class="col-xs-12 image-collection {{ value.extra_classes }}">
+        {% ifequal value.images|length 1 %}
+            {% for imgblock in value.images %}
+                {% include "blocks/_image1_block.html" %}
+            {% endfor %}
+        {% else %}
+            {% if value.images|length == 3 %}
+                {% include "blocks/_image3_block.html" %}
+            {% else %}
+                {% include "blocks/_image2_block.html" %}
+            {% endif %}
+        {% endifequal %}
+    </div>
+</div>

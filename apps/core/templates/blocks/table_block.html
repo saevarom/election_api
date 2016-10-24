@@ -1,0 +1,5 @@
+{% load wagtailcore_tags overcast_tags cache static wagtailembeds_tags %}
+
+<div class="pl0 pr0 pt15 table-responsive">
+{% parse_csv_as_table value.table value.caption value.header_row value.footer_row value.header_column separator='|' classes=value.extra_classes %}
+</div>

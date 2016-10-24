@@ -1,0 +1,33 @@
+
+<div class="row chart-row">
+    <div class="col-xs-12 p0">
+        <div class="charts-container contained-{{value.contained_charts}} {{value.extra_classes}}">
+            {% for chart in value.charts %}
+                <div class="chart-element {% if value.contained_charts %} col-md-6 col-xs-12 {% endif %} mb20 chart-type-{{chart.Blocktype|safe}}">
+                    <div class="chart-element-container">
+                        <p class="text-left title">{{chart.Title|safe}}</p>
+                        {% if chart.Subtitle %}
+                            <p class="text-left subtitle">{{chart.Subtitle|safe}}</p>
+                        {% else %}
+                            {% if value.contained_charts %}
+                                <p class="text-transparent subtitle"><br></p>
+                            {% endif %}
+                        {% endif %}
+                        <canvas height="300" class="chart-block" id="chart_{{chart.UniqueID}}"></canvas>
+                        <script>
+                            $('#chart_{{chart.UniqueID}}').data('title',"{{chart.Title|safe}}");
+                            $('#chart_{{chart.UniqueID}}').data('subtitle',"{{chart.Subtitle|safe}}");
+                            $('#chart_{{chart.UniqueID}}').data('type',"{{chart.Blocktype|safe}}");
+                            $('#chart_{{chart.UniqueID}}').data('data',{{chart.Data|safe}});
+                            {% if chart.Options %}
+                                $('#chart_{{chart.UniqueID}}').data('options',{{chart.Options|safe}});
+                            {% else %}
+                                $('#chart_{{chart.UniqueID}}').data('options',{});
+                            {% endif %}
+                        </script>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+{% load overcast_tags cache compress static wagtailuserbar wagtailimages_tags static %}<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>{% block title %}{% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %}{% endblock %}{% block title_postfix %}{% endblock %}</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="{% if self.search_description %}{{ self.search_description }}{% endif %}">
+
+        {% block extra_css %}{% endblock %} {# Override this block in individual templates in order to add stylesheets on a template by template basis #}
+
+    </head>
+    <body class="page-{{ self|content_type }} title-{{ self.title|slugify }} pageid-{{ self.id }} {% block body_class %}{% endblock %}">
+
+        {% wagtailuserbar %} {# Don't delete this #}
+
+        {% block content %}{% endblock %}
+
+        {% block extra_js %}{% endblock %} {# Override this block in individual templates in order to add javascript on a template by template basis #}
+    </body>
+</html>
