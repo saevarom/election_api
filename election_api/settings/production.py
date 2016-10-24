@@ -1,4 +1,5 @@
 from .base import *
+import os
 
 
 DEBUG = False
@@ -36,6 +37,11 @@ import dj_database_url
 DATABASES =  {
     'default': dj_database_url.config()
 }
+
+EMAIL_HOST = 'smtp.mandrillapp.com'
+EMAIL_PORT = '587'
+EMAIL_HOST_USER = 'app58346924@heroku.com'
+EMAIL_HOST_PASSWORD = '1oy8v2v31303'
 
 try:
     from .local import *
