@@ -122,6 +122,7 @@ class Constituency(models.Model):
     name = models.CharField(max_length=255)
     voters = models.IntegerField()
     available_seats = models.IntegerField()
+    extra_seats = models.IntegerField()
     election = models.ForeignKey('Election')
 
     def __unicode__(self):
@@ -129,6 +130,14 @@ class Constituency(models.Model):
 
     def electoral_lists(self):
         return self.electorallist_set.all()
+
+    panels = [
+        FieldPanel('name'),
+        FieldPanel('voters'),
+        FieldPanel('available_seats'),
+        FieldPanel('extra_seats'),
+        SnippetChooserPanel('election'),
+    ]
 
 
 class ElectoralListSeat(models.Model):
